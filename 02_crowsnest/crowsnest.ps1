@@ -1,29 +1,30 @@
-﻿<#
+[CmdletBinding()]
+ Param(
+        [Parameter(ValueFromPipeline)]
+        [string]
+        $InputObject,
+        [Parameter(ValueFromRemainingArguments,Position=0)]
+        [string[]]
+        $StringObject
+    )
 
-Author:            Doug Finke
-Email:             finked@hotmail.com
 
-Blog:              https://dfinke.github.io/
-Twitter:           https://twitter.com/dfinke
-GitHub:            https://github.com/dfinke
-YouTube:           https://www.youtube.com/dougfinke
+[string[]]$vowel_array = @('a', 'e', 'i', 'o', 'u')
 
-PowerShell Meetup: https://www.meetup.com/NycPowershellMeetup/
-
-LinkedIn:          https://www.linkedin.com/in/douglasfinke/
-#>
-
-param(
-    [Parameter(Mandatory)]    
-    # A word
-    $word
-)
-
-$article = if ('aeiou'.IndexOf($word.ToLower()[0]) -ge 0) {
-    "an"
-}
-else {
-    "a"
+if($InputObject) {
+    $string = $InputObject
+} elseif ($StringObject) {
+    $string = $StringObject -join ''
+} else {
+    Write-Error "No input provided."
+    return
 }
 
-"Ahoy, Captain, $($article) $($word) off the larboard bow!"
+$firstChar = $string.Substring(0,1)
+
+if($firstChar -in $vowel_array) {
+    $response_string = "Ahoy, Captain, an $string off the larboard bow!"
+} else {
+    $response_string = "Ahoy, Captain, a $string off the larboard bow!"
+}
+$response_string
