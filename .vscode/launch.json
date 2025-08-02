@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PowerShell: Launch hello world",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\01_hello\\hello.ps1",
+            "args": [],
+            "cwd": "${workspaceFolder}\\01_hello"
+        },
+        {
+            "name": "PowerShell: Launch hello world with arguments",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\01_hello\\hello.ps1",
+            "args": ["-name world"],
+            "cwd": "${workspaceFolder}\\01_hello"
+        },
+        {
+            "name": "PowerShell: Launch crowsnest non vowel",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\02_crowsnest\\crowsnest.ps1",
+            "args": ["narwall"],
+            "cwd": "${workspaceFolder}\\02_crowsnest"
+        },
+        {
+            "name": "PowerShell: Launch crowsnest vowel",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\02_crowsnest\\crowsnest.ps1",
+            "args": ["narwall"],
+            "cwd": "${workspaceFolder}\\02_crowsnest"
+        }
+    ]
+}
