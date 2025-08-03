@@ -35,6 +35,38 @@
             "script": "${workspaceFolder}\\02_crowsnest\\crowsnest.ps1",
             "args": ["narwall"],
             "cwd": "${workspaceFolder}\\02_crowsnest"
+        },
+        {
+            "name": "PowerShell: Launch picnic more than 2",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\03_picnic\\solution2.ps1",
+            "args": ["cheese apples bread water 'bag of crisps'"],
+            "cwd": "${workspaceFolder}}\\03_picnic"
+        },
+        {
+            "name": "PowerShell: Launch picnic one item",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\03_picnic\\solution2.ps1",
+            "args": ["cheese"],
+            "cwd": "${workspaceFolder}}\\03_picnic"
+        },
+        {
+            "name": "PowerShell: Launch picnic two items",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\03_picnic\\solution2.ps1",
+            "args": ["cheese apples"],
+            "cwd": "${workspaceFolder}}\\03_picnic"
+        },
+        {
+            "name": "PowerShell: Launch picnic more than 2 sorted",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\03_picnic\\solution2.ps1",
+            "args": ["cheese apples bread water 'bag of crisps'", "-sort"],
+            "cwd": "${workspaceFolder}}\\03_picnic"
         }
     ]
 }
