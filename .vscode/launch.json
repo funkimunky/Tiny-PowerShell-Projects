@@ -67,6 +67,14 @@
             "script": "${workspaceFolder}\\03_picnic\\solution2.ps1",
             "args": ["cheese apples bread water 'bag of crisps'", "-sort"],
             "cwd": "${workspaceFolder}}\\03_picnic"
+        },
+        {
+            "name": "PowerShell: jump the five",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\04_jump_the_five\\solution2.ps1",
+            "args": ["123-456-7890"],
+            "cwd": "${workspaceFolder}}\\04_jump_the_five"
         }
     ]
 }
