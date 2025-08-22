@@ -75,6 +75,22 @@
             "script": "${workspaceFolder}\\04_jump_the_five\\solution2.ps1",
             "args": ["123-456-7890"],
             "cwd": "${workspaceFolder}}\\04_jump_the_five"
+        },
+        {
+            "name": "PowerShell: howler - imput string",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\05_howler\\solution2.ps1",
+            "args": ["The quick brown fox jumps over the lazy dog."],
+            "cwd": "${workspaceFolder}}\\05_howler"
+        },
+        {
+            "name": "PowerShell: howler - imput file",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\05_howler\\solution2.ps1",
+            "args": ["..\\inputFiles\\preamble.txt","TestDrive:\\preambleOutFile.txt"],
+            "cwd": "${workspaceFolder}}\\05_howler"
         }
     ]
 }
